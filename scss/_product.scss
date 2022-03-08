@@ -1,0 +1,88 @@
+.row {
+  margin-top: 50px;
+  padding: 8px;
+  border: 1px solid #eaeaea;
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: auto auto auto auto;
+}
+.product-wrapper {
+  @include flex(center, center);
+  flex-direction: column;
+  position: relative;
+}
+.product-btn-add {
+  padding: 16.6px;
+  background-color: $color-txt;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  position: relative;
+  top: -11.2%;
+  cursor: pointer;
+}
+.product-btn-add:before {
+  content: "";
+  border-bottom: 43px solid $color-txt;
+  border-left: 40px solid transparent;
+  position: absolute;
+  left: -30.3%;
+  top: 2.7%;
+}
+.product-btn-add:after {
+  content: "";
+  border-bottom: 43px solid $color-txt;
+  border-right: 40px solid transparent;
+  position: absolute;
+  right: -30.4%;
+  top: 2.7%;
+}
+.product-btn-add:hover,
+.product-btn-add:active {
+  background-color: $background-btn-slider;
+}
+.product-btn-add:hover::before,
+.product-btn-add:hover::after,
+.product-btn-add:active::before,
+.product-btn-add:active::after {
+  border-bottom-color: $background-btn-slider;
+}
+
+@include tablet() {
+  .product-btn-add {
+    padding: 4%;
+  }
+  .product-btn-add:before {
+    border-bottom: 25px solid $color-txt;
+    border-left: 20px solid transparent;
+    left: -17%;
+    top: 1.5%;
+  }
+  .product-btn-add:after {
+    border-bottom: 25px solid $color-txt;
+    border-right: 20px solid transparent;
+    right: -17%;
+    top: 1.5%;
+  }
+}
+
+@include mobile() {
+  .row {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .product-btn-add {
+    padding: 4.1%;
+    font-size: 0.7rem;
+  }
+  .product-btn-add:before {
+    left: -17%;
+    top: -2.1%;
+  }
+  .product-btn-add:after {
+    border-bottom: 25px solid $color-txt;
+    border-right: 20px solid transparent;
+    right: -17%;
+    top: -2.1%;
+  }
+}

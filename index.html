@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css"
+      integrity="sha512-6/gTF62BJ06BajySRzTm7i8N2ZZ6StspU9uVWDdoBiuuNu5rs1a8VwiJ7skCz2BcvhpipLKfFerXkuzs+npeKA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Shophia</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!-- start header -->
+    <header>
+      <div class="top-wrapper">
+        <div class="container">
+          <div class="top-bar">
+            <div class="top-phone">
+              <span class="phone-icon"><i class="fa-solid fa-phone"></i></span>
+              <span class="phone-number">Call +001 555 801</span>
+            </div>
+            <div class="top-introduce">
+              <div class="introduce-desc">WELCOME MSG!</div>
+              <div class="introduce-desc">MY ACCOUNT</div>
+              <div class="introduce-desc">MY WHISTLIST</div>
+              <div class="introduce-desc">LOGIN</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="nav-top">
+          <div class="nav-menu">
+            <ul class="menu-wrapper">
+              <li class="menu-item"><a href="#">Home</a></li>
+              <li class="menu-item"><a href="#">Gallery</a></li>
+              <li class="menu-item"><a href="#">Categories</a></li>
+              <li class="menu-item"><a href="#">Pages</a></li>
+            </ul>
+          </div>
+          <div class="nav-logo">
+            <div class="logo-img">
+              <img src="./images/logo-2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="nav-society">
+            <div class="society-wrapper">
+              <div class="society-item">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div class="society-item">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div class="society-item">
+                <i class="fa-brands fa-pinterest-p"></i>
+              </div>
+              <div class="society-item">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </div>
+            <div class="btn-top">
+              <div class="btn-text">RUPIAH</div>
+              <div class="btn-icon">
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-mobile">
+        <div class="mobile-nav">
+          <div class="mobile-logo">
+            <img src="images/logo-shophia.jpg" alt="" />
+          </div>
+          <div class="mobile-icon">
+            <i id="bars" class="fa-solid fa-bars"></i>
+            <i id="xmark" class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+
+        <div class="mobile-dropdown">
+          <div class="mobile-nav-menu">
+            <ul class="mobile-menu-wrapper">
+              <li class="mobile-menu-item"><a href="#">Home</a></li>
+              <li class="mobile-menu-item"><a href="#">Gallery</a></li>
+              <li class="mobile-menu-item"><a href="#">Categories</a></li>
+              <li class="mobile-menu-item"><a href="#">Pages</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+
+    <!-- start slider -->
+    <div class="slider">
+      <div class="my-slide fade">
+        <div class="triangle"></div>
+        <div class="slider-btn">
+          <a class="slider-txt" href="#">Shop now</a>
+        </div>
+        <img class="slide-img" src="./images/slider-1.jpg" />
+      </div>
+      <div class="my-slide fade">
+        <img class="slide-img" src="./images/slider-2.jpg" />
+      </div>
+      <div class="my-slide fade">
+        <img class="slide-img" src="./images/slider-3.jpg" />
+      </div>
+      <div class="my-slide fade">
+        <div class="triangle"></div>
+        <div class="slider-btn">
+          <a class="slider-txt" href="#">Shop now</a>
+        </div>
+        <img class="slide-img" src="./images/slider-1.jpg" />
+      </div>
+      <div class="dotsbox" style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+    </div>
+    <!-- end slider -->
+
+    <!-- star main -->
+    <div class="container">
+      <div class="shipping-service">
+        <div class="shipping-item">
+          <div class="shipping-icon">
+            <i class="fa-solid fa-plane-departure"></i>
+          </div>
+          <div class="shipping-desc">
+            <h3 class="desc-title">FREE SHIPPING</h3>
+            <p class="desc-span">In Order Min $200</p>
+          </div>
+        </div>
+        <div class="shipping-item">
+          <div class="shipping-icon">
+            <i class="fa-solid fa-clock"></i>
+          </div>
+          <div class="shipping-desc">
+            <h3 class="desc-title">30-DAYS RETURNS</h3>
+            <p class="desc-span">Money Back Guarantee</p>
+          </div>
+        </div>
+        <div class="shipping-item">
+          <div class="shipping-icon">
+            <i class="fa-solid fa-life-ring"></i>
+          </div>
+          <div class="shipping-desc">
+            <h3 class="desc-title">24/7 SUPPORT</h3>
+            <p class="desc-span">Lifestyme Support</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="elementor-divider" data-aos="zoom-in">
+      <div class="elementor-rhombus"></div>
+      <div class="elementor-txt">HandPicked</div>
+      <div class="elementor-rhombus"></div>
+    </div>
+
+    <div class="container">
+      <div class="smal-wrapper" data-aos="fade-up">
+        <div class="small-box">
+          <div class="small-item small-active">
+            <img src="images/small-1.jpg" alt="small" />
+          </div>
+          <div class="small-item">
+            <img src="images/small-3.jpg" alt="small" />
+          </div>
+        </div>
+        <div class="small-box">
+          <div class="small-big">
+            <img src="images/small-5.jpg" alt="small" />
+          </div>
+        </div>
+        <div class="small-box">
+          <div class="small-item">
+            <img src="images/small-2.jpg" alt="small" />
+          </div>
+          <div class="small-item">
+            <img src="images/small-4.jpg" alt="small" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="elementor-divider" data-aos="zoom-in">
+      <div class="elementor-rhombus"></div>
+      <div class="elementor-txt">Summer Collection</div>
+      <div class="elementor-rhombus"></div>
+    </div>
+
+    <div class="container">
+      <div class="row" data-aos="fade-up">
+        <div class="product-wrapper">
+          <div class="product-img">
+            <img src="images/product-1.jpg" alt="" />
+          </div>
+          <div class="product-btn-add" active>&#x0002B; add to cart</div>
+        </div>
+        <div class="product-wrapper">
+          <div class="product-img">
+            <img src="images/product-2.jpg" alt="" />
+          </div>
+          <div class="product-btn-add">&#x0002B; add to cart</div>
+        </div>
+        <div class="product-wrapper">
+          <div class="product-img">
+            <img src="images/product-3.jpg" alt="" />
+          </div>
+          <div class="product-btn-add">&#x0002B; add to cart</div>
+        </div>
+        <div class="product-wrapper">
+          <div class="product-img">
+            <img src="images/product-4.jpg" alt="" />
+          </div>
+          <div class="product-btn-add">&#x0002B; add to cart</div>
+        </div>
+        <div class="product-wrapper">
+          <div class="product-img">
+            <img src="images/product-5.jpg" alt="" />
+          </div>
+          <div class="product-btn-add">&#x0002B; add to cart</div>
+        </div>
+        <div class="product-wrapper">
+          <div class="product-img">
+            <img src="images/product-6.jpg" alt="" />
+          </div>
+          <div class="product-btn-add">&#x0002B; add to cart</div>
+        </div>
+        <div class="product-wrapper">
+          <div class="product-img">
+            <img src="images/product-7.jpg" alt="" />
+          </div>
+          <div class="product-btn-add">&#x0002B; add to cart</div>
+        </div>
+        <div class="product-wrapper">
+          <div class="product-img">
+            <img src="images/product-3.jpg" alt="" />
+          </div>
+          <div class="product-btn-add">&#x0002B; add to cart</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="elementor-divider" data-aos="zoom-in">
+      <div class="elementor-rhombus"></div>
+      <div class="elementor-txt">Our Brand</div>
+      <div class="elementor-rhombus"></div>
+    </div>
+
+    <div class="container">
+      <div class="brand-wrapper" data-aos="zoom-in">
+        <div class="brand-item"><img src="images/Brand-1.png" alt="" /></div>
+        <div class="brand-item"><img src="images/Brand-2.png" alt="" /></div>
+        <div class="brand-item"><img src="images/Brand-3.png" alt="" /></div>
+        <div class="brand-item"><img src="images/Brand-4.png" alt="" /></div>
+        <div class="brand-item"><img src="images/Brand-5.png" alt="" /></div>
+        <div class="brand-item"><img src="images/Brand-6.png" alt="" /></div>
+      </div>
+    </div>
+
+    <div class="elementor-divider" data-aos="zoom-in">
+      <div class="elementor-rhombus"></div>
+      <div class="elementor-txt">Customers Says</div>
+      <div class="elementor-rhombus"></div>
+    </div>
+
+    <div class="customers" data-aos="fade-up">
+      <div class="triangle"></div>
+      <div class="container">
+        <div class="customers-wrapper">
+          <div class="customers-left">
+            <img class="customers-img" src="images/customers-1.jpg" alt="" />
+            <div class="customers-content">
+              <div class="customers-desc">
+                Sed ut perspiciatis <br />
+                unde omnis iste natus error sit <br />
+                voluptatem accusantium doloremque
+              </div>
+              <div class="customers-name">
+                <h3 class="customers-title">Sandra Dewi</h3>
+                <p class="customers-footer">FASHION STYLISH</p>
+              </div>
+            </div>
+          </div>
+          <div class="customers-right">
+            <div class="customers-content">
+              <div class="customers-desc">
+                Sed ut perspiciatis <br />
+                unde omnis iste natus error sit <br />
+                voluptatem accusantium doloremque
+              </div>
+              <div class="customers-name">
+                <h3 class="customers-title">Shaheer Sheikh</h3>
+                <p class="customers-footer">DESIGNER</p>
+              </div>
+            </div>
+            <img class="customers-img" src="images/customers-2.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end main -->
+
+    <!-- start footer -->
+    <footer data-aos="fade-up">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-content">
+            <div class="footer-title">
+              <h3>SHOPS</h3>
+            </div>
+            <div class="footer-desc">
+              <div class="footer-item">New In</div>
+              <div class="footer-item">Women</div>
+              <div class="footer-item">Men</div>
+              <div class="footer-item">Shoes</div>
+              <div class="footer-item">Bags & Accessories</div>
+              <div class="footer-item">Top Brands</div>
+              <div class="footer-item">Sale & Special Offers</div>
+              <div class="footer-item">Lookbook</div>
+            </div>
+          </div>
+
+          <div class="footer-content">
+            <div class="footer-title">
+              <h3>NFORMATION</h3>
+            </div>
+            <div class="footer-desc">
+              <div class="footer-item">About us</div>
+              <div class="footer-item">Customer Service</div>
+              <div class="footer-item">New Collection</div>
+              <div class="footer-item">Best Sellers</div>
+              <div class="footer-item">Manufacturers</div>
+              <div class="footer-item">Privacy policy</div>
+              <div class="footer-item">Terms & condition</div>
+              <div class="footer-item">Blog</div>
+            </div>
+          </div>
+
+          <div class="footer-content">
+            <div class="footer-title">
+              <h3>CUSTOMER SERVICE</h3>
+            </div>
+
+            <div class="footer-desc">
+              <div class="footer-item">Search Terms</div>
+              <div class="footer-item">Advanced Search</div>
+              <div class="footer-item">Orders and Returns</div>
+              <div class="footer-item">Contact Us</div>
+              <div class="footer-item">RSS</div>
+              <div class="footer-item">Help & FAQs</div>
+              <div class="footer-item">Consultant</div>
+              <div class="footer-item">Store Locations</div>
+            </div>
+          </div>
+
+          <div class="footer-content">
+            <div class="footer-title">
+              <h3>STAY CONNECTED</h3>
+            </div>
+            <div class="footer-desc">
+              <div class="footer-icon-wrapper">
+                <div class="footer-icon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div class="footer-icon">
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="footer-icon">
+                  <i class="fa-brands fa-pinterest-p"></i>
+                </div>
+                <div class="footer-icon">
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="footer-icon">
+                  <i class="fa-solid fa-rss"></i>
+                </div>
+              </div>
+              <div class="footer-subscribe">
+                <b>SUBSCRIBE</b> <i>in</i> <b>OUR NEWS LETTER</b>
+              </div>
+            </div>
+            <div class="footer-form">
+              <input
+                class="footer-input"
+                type="text"
+                placeholder="Enter Your Email Address"
+              />
+              <button class="footer-btn">SUBSCRIBE</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-footer" data-aos="fade-up">
+          <div class="bottom-footer-content">
+            <p class="bottom-footer-txt">
+              © 2015 Shopia Fashion Store Shopify. <br />
+              All Rights Reserved. Ecommerce Software by Shopify. <br />
+              Designed by MoccaLabs.com
+            </p>
+            <div class="bottom-footer-card">
+              <img src="images/card-1.png" alt="" />
+              <img src="images/card-2.png" alt="" />
+              <img src="images/card-3.png" alt="" />
+              <img src="images/card-4.png" alt="" />
+            </div>
+          </div>
+          <div
+            data-aos="fade-up"
+            id="scrollTop"
+            onclick="topFunction()"
+            class="bottom-footer-top"
+          >
+            <i class="fa-solid fa-arrow-up"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+  </body>
+  <script src="scripts/app.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>

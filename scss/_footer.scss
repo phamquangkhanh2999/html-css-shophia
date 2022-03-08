@@ -1,0 +1,145 @@
+footer {
+  padding-top: 70px;
+  background-color: #141414;
+}
+.footer-wrapper {
+  display: grid;
+  grid-template-columns: 300px 300px 300px auto;
+  column-gap: 100px;
+  padding-bottom: 50px;
+}
+
+.footer-title {
+  padding-bottom: 56px;
+}
+
+.footer-title > h3 {
+  color: $color-white;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.footer-item {
+  text-transform: capitalize;
+  line-height: 2.2;
+  font-size: 0.9rem;
+  color: #5a5a5a;
+}
+
+.footer-icon-wrapper {
+  display: inline-flex;
+  margin-bottom: 43px;
+}
+
+.footer-icon {
+  border-radius: 50%;
+  font-size: 1.5rem;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding: 0.5em;
+  margin-right: 1.2em;
+  color: $color-txt;
+  cursor: pointer;
+  background-color: $color-white;
+}
+
+.footer-subscribe {
+  color: $color-white;
+  margin-bottom: 43px;
+}
+.footer-form {
+  border: 1px solid #5a5a5a;
+  padding: 5px;
+  display: inline-flex;
+}
+.footer-input {
+  padding: 19px 170px 19px 20px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+.footer-btn {
+  border: none;
+  padding: 20px 30px 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #323030;
+  color: white;
+}
+
+.bottom-footer {
+  @include flex(center, space-between);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-top: 1px solid #5a5a5a;
+}
+
+.bottom-footer-content {
+}
+
+.bottom-footer-txt {
+  font-size: 0.8rem;
+  line-height: 2.1;
+  color: #363636;
+}
+
+.bottom-footer-card {
+  display: inline-flex;
+  align-items: center;
+}
+
+.bottom-footer-card > img {
+  margin: 20px 20px 20px 0;
+}
+.bottom-footer-top {
+  color: white;
+  padding: 10px;
+  background-color: black;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.bottom-footer-top:hover {
+  color: black;
+  background-color: white;
+}
+
+@include tablet {
+  .footer-wrapper {
+    column-gap: 0px;
+    grid-template-columns: 250px 250px 250px;
+    row-gap: 30px;
+  }
+  .footer-subscribe {
+    font-size: 0.7rem;
+  }
+}
+
+@include mobile {
+  .footer-wrapper {
+    display: inline;
+  }
+
+  .footer-content {
+    margin-bottom: 32.3px;
+  }
+  .footer-content:nth-child(-n + 3) {
+    border-bottom: 1px solid white;
+  }
+  .footer-desc {
+    padding-bottom: 20px;
+  }
+  .footer-icon {
+    font-size: 1.2rem;
+    width: 40px;
+    height: 40px;
+  }
+  .footer-title {
+    padding-bottom: 20px;
+  }
+  .footer-input {
+    padding: 15px 20px 15px 15px;
+  }
+}

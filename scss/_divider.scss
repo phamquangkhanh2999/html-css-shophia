@@ -1,0 +1,62 @@
+.elementor-divider {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.elementor-divider::before,
+.elementor-divider::after {
+  content: "";
+  display: block;
+  height: 0.09em;
+  min-width: 28%;
+}
+.elementor-divider::before {
+  background-color: $background-gray;
+  margin-right: 4vh;
+}
+.elementor-divider::after {
+  background-color: $background-gray;
+  margin-left: 4vh;
+}
+.elementor-rhombus {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: $background-yellow;
+  transform: rotate(45deg);
+  transition: background-color 0.25s linear;
+  margin: 0 50px;
+}
+.elementor-txt {
+  font-size: 1.8rem;
+}
+
+@include tablet {
+  .elementor-divider::before,
+  .elementor-divider::after {
+    min-width: 20%;
+  }
+  .elementor-rhombus {
+    margin: 0 40px;
+  }
+  .elementor-txt {
+    font-size: 1.3rem;
+  }
+}
+
+@include mobile {
+  .elementor-divider::before,
+  .elementor-divider::after {
+    min-width: 14%;
+  }
+  .elementor-rhombus {
+    width: 10px;
+    height: 10px;
+    margin: 0 20px;
+  }
+  .elementor-txt {
+    font-size: 0.7rem;
+  }
+}

@@ -1,0 +1,64 @@
+.customers {
+  background-color: $background-yellow;
+  &-wrapper {
+    @include flex(center, space-between);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+  }
+
+  &-left,
+  &-right {
+    @include flex(center, center);
+  }
+  &-img {
+    width: auto;
+  }
+
+  &-desc {
+    font-style: italic;
+    color: white;
+    line-height: 1.6;
+    font-size: 1.1rem;
+  }
+  &-desc:nth-child(1) {
+    text-align: left;
+  }
+  &-name {
+    margin-top: 50px;
+    font-style: italic;
+    line-height: 1.6;
+  }
+  &-title {
+    font-size: 1.5rem;
+    color: #6a5f5f;
+  }
+
+  &-footer {
+    font-size: 0.9rem;
+    color: $background-gray;
+  }
+}
+.customers-right > .customers-content > .customers-desc,
+.customers-right > .customers-content > .customers-name {
+  text-align: right;
+}
+
+@include tablet {
+  .customers-desc {
+    font-size: 0.7rem;
+  }
+
+  .customers-title {
+    font-size: 1.3rem;
+  }
+}
+@include mobile {
+  .customers-wrapper {
+    flex-direction: column;
+  }
+
+  .customers-desc {
+    font-size: 0.6rem;
+  }
+}

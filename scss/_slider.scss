@@ -1,0 +1,107 @@
+.slider {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.my-slide {
+  height: 692px;
+  overflow: hidden;
+}
+
+.slider-btn {
+  position: absolute;
+  background-color: $background-btn-slider;
+  letter-spacing: 2px;
+  line-height: 30px;
+  top: 75%;
+  left: 45%;
+  padding: 4px 20px 4px;
+}
+.slider-btn > .slider-txt {
+  color: $color-white;
+  text-transform: uppercase;
+}
+.dotsbox {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 20px;
+  cursor: pointer;
+}
+.slide-img {
+  width: 100%;
+  height: 100%;
+}
+.dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: $background-gray;
+  transform: rotate(45deg);
+  transition: background-color 0.25s linear;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.active-dot,
+.dot:hover {
+  background-color: $color-txt;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@include tablet {
+  .my-slide {
+    height: 355px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+  }
+}
+
+@include mobile {
+  .my-slide {
+    height: 200px;
+  }
+
+  .slider-btn {
+    line-height: 12px;
+    font-size: 0.3rem;
+    padding: 2px 8px 2px;
+    letter-spacing: 1;
+    top: 70%;
+    left: 42%;
+  }
+
+  .dot {
+    width: 7px;
+    height: 7px;
+    margin-right: 5px;
+  }
+}
