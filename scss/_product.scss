@@ -50,18 +50,18 @@
 
 @include tablet() {
   .product-btn-add {
-    padding: 7px;
+    padding: 6.9px;
   }
   .product-btn-add:before {
     border-bottom: 25px solid $color-txt;
     border-left: 20px solid transparent;
-    left: -17%;
+    left: -19px;
     top: 0px;
   }
   .product-btn-add:after {
     border-bottom: 25px solid $color-txt;
     border-right: 20px solid transparent;
-    right: -17%;
+    right: -19px;
     top: 0;
   }
 }
@@ -76,13 +76,13 @@
     font-size: 0.7rem;
   }
   .product-btn-add:before {
-    left: -17%;
+    left: -19px;
     top: 0;
   }
   .product-btn-add:after {
     // border-bottom: 25px solid $color-txt;
     // border-right: 20px solid transparent;
-    right: -17%;
+    right: -19px;
     top: 0;
   }
 }
