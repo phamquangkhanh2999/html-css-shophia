@@ -88,6 +88,18 @@ header {
 .menu-mobile {
   display: none;
 }
+.menu-overlay {
+  position: fixed;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 70px;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
 @include tablet {
   .top-wrapper {
     background-color: $background-header;
@@ -128,6 +140,10 @@ header {
     display: block;
     margin-top: 1em;
   }
+  .menu-overlay.active {
+    visibility: visible;
+    opacity: 1;
+  }
   .mobile-nav {
     @include flex(center, space-between);
     padding: 0px 1em 0;
@@ -139,17 +155,18 @@ header {
   .mobile-icon {
     font-size: 1.5rem;
     cursor: pointer;
+    transition: all 0.3s ease;
   }
   .mobile-dropdown {
     display: block;
     position: fixed;
-    background: $background-gray;
+    background: #222222;
     height: 100%;
     width: 100%;
     top: 70px;
     left: -100%;
     margin-left: 0;
-    max-width: 350px;
+    max-width: 300px;
     overflow-y: auto;
     padding-bottom: 100px;
     overflow-y: auto;
@@ -169,9 +186,10 @@ header {
   }
   .mobile-menu-item {
     padding: 1em;
+    border-bottom: 1px solid white;
   }
   .mobile-menu-item > a {
-    color: $color-txt;
+    color: $color-white;
     font-style: italic;
     font-size: 1.2rem;
   }

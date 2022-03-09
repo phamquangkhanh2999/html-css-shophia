@@ -1,5 +1,6 @@
 const mobileIcon = document.querySelector(".mobile-icon");
-const mobileDropdown = document.querySelector(".mobile-dropdown");
+const mobileDropdown = document.querySelector(".mobile-dropdown"),
+  menuOverlay = document.querySelector(".menu-overlay");
 const bars = document.querySelector("#bars");
 const xmark = document.querySelector("#xmark");
 let isHidden = false;
@@ -14,6 +15,8 @@ const scrollTop = document.querySelector("#scrollTop");
 // menu mobile
 mobileIcon.onclick = function changeMenu() {
   mobileDropdown.classList.toggle("active-mobiel");
+  menuOverlay.classList.toggle("active");
+  document.body.classList.toggle("hidden-scrolling");
   if (!isHidden) {
     bars.style.display = "none";
     xmark.style.display = "block";

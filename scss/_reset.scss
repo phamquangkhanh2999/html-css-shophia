@@ -34,3 +34,6 @@ img {
 li {
   list-style: none;
 }
+body.hidden-scrolling {
+  overflow-y: hidden;
+}

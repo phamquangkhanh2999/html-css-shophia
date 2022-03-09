@@ -44,6 +44,10 @@ li {
   list-style: none;
 }
 
+body.hidden-scrolling {
+  overflow-y: hidden;
+}
+
 * {
   scroll-behavior: smooth;
 }
@@ -199,6 +203,19 @@ body {
   display: none;
 }
 
+.menu-overlay {
+  position: fixed;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 70px;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
 @media only screen and (max-width: 1024px) {
   .top-wrapper {
     background-color: #f2f2f2;
@@ -246,6 +263,11 @@ body {
     margin-top: 1em;
   }
 
+  .menu-overlay.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
   .mobile-nav {
     display: flex;
     align-items: center;
@@ -266,13 +288,13 @@ body {
   .mobile-dropdown {
     display: block;
     position: fixed;
-    background: #b2b2b2;
+    background: #222222;
     height: 100%;
     width: 100%;
     top: 70px;
     left: -100%;
     margin-left: 0;
-    max-width: 350px;
+    max-width: 300px;
     overflow-y: auto;
     padding-bottom: 100px;
     overflow-y: auto;
@@ -294,10 +316,11 @@ body {
 
   .mobile-menu-item {
     padding: 1em;
+    border-bottom: 1px solid white;
   }
 
   .mobile-menu-item > a {
-    color: #000000;
+    color: #ffffff;
     font-style: italic;
     font-size: 1.2rem;
   }
