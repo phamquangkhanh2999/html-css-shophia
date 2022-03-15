@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: space-between;
   margin: 55px 0px 55px;
+  gap: 10px;
 }
 .shipping-item:nth-child(2n) {
   background-color: $color-txt;
@@ -50,8 +51,9 @@
   padding: 17px 17px 17px;
   display: flex;
   align-items: center;
-  flex-basis: 435px;
-  flex-shrink: 1;
+  // flex-basis: 435px;
+  // flex-shrink: 1;
+  flex: 1;
   position: relative;
 }
 

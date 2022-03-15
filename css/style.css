@@ -283,6 +283,7 @@ body {
   .mobile-icon {
     font-size: 1.5rem;
     cursor: pointer;
+    transition: all 0.3s ease;
   }
 
   .mobile-dropdown {
@@ -448,6 +449,7 @@ body {
   align-items: center;
   justify-content: space-between;
   margin: 55px 0px 55px;
+  gap: 10px;
 }
 
 .shipping-item:nth-child(2n) {
@@ -500,8 +502,7 @@ body {
   padding: 17px 17px 17px;
   display: flex;
   align-items: center;
-  flex-basis: 435px;
-  flex-shrink: 1;
+  flex: 1;
   position: relative;
 }
 
@@ -573,7 +574,7 @@ body {
   }
 
   .shipping-item {
-    flex-basis: 110px;
+    flex: 1;
     padding: 10px;
   }
 
